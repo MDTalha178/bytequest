@@ -11,7 +11,7 @@ class ProductSerializer(serializers.ModelSerializer):
     """
     product_name = serializers.CharField(required=True, max_length=250, allow_blank=False, allow_null=False)
     product_price = serializers.IntegerField(required=True, allow_null=False)
-    product_category = serializers.CharField(required=False, default='74749d0b-1aab-4fb8-a6e0-40c9389e5276')
+    product_category = serializers.CharField(required=False, default='f3ac635c-6054-49a1-9870-26200baa5c2e')
 
     @staticmethod
     def validate_product_name(value):
